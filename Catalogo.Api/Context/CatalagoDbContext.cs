@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Catalogo.Api.Context;
 
-public class CatalagoDbContext : DbContext
+public class CatalogoDbContext : DbContext
 {
-    public CatalagoDbContext(DbContextOptions<CatalagoDbContext> options) : base(options)
+    public CatalogoDbContext(DbContextOptions<CatalogoDbContext> options) : base(options)
     {}
 
     public DbSet<Categoria> Categorias { get; set; }
